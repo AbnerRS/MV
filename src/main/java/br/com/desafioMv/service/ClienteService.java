@@ -33,4 +33,9 @@ public class ClienteService {
 
 		clienteRepositorio.delete(cliente);
 	}
+	
+	public Cliente inserirCliente(Cliente cliente) {
+
+		return clienteRepositorio.save(cliente);
+	}
 }
