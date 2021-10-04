@@ -4,11 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### maven ###
-.mvn
-mvnw
-mvnw.cmd
-
 ### STS ###
 .apt_generated
 .classpath
