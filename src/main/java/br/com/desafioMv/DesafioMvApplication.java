@@ -8,6 +8,7 @@ public class DesafioMvApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DesafioMvApplication.class, args);
+		
 	}
 
 }

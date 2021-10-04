@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+
 import br.com.desafioMv.entity.Cliente;
 import br.com.desafioMv.service.ClienteService;
 
@@ -30,7 +31,7 @@ public class ClienteController {
 	}
 
 	@RequestMapping(value = "/clienteById/{id}", method = RequestMethod.GET)
-	private ResponseEntity<Cliente> getClientePorID(@PathVariable(value = "id") Integer id) {
+	public ResponseEntity<Cliente> getClientePorID(@PathVariable(value = "id") Integer id) {
 
 		Optional<Cliente> cliente = clienteService.getClientePorId(id);
 
@@ -52,7 +53,7 @@ public class ClienteController {
         
     	}else {
             return new ResponseEntity<Cliente>(HttpStatus.NOT_FOUND);
-    	}
+    	} 
     }
 
 	@RequestMapping(value = "/deleteCliente/{id}", method = RequestMethod.DELETE)

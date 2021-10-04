@@ -43,6 +43,9 @@ public class Conta {
 	@Column(name = "SALDO_ATUAL")
 	private double saldoAtual;
 	
+	@Column(name = "ATIVA")
+	private int ativa;
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "id_cliente")
 	private Cliente cliente;
@@ -96,5 +99,19 @@ public class Conta {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+	public int getAtiva() {
+		return ativa;
+	}
+	public void setAtiva(int ativa) {
+		this.ativa = ativa;
+	}
+	public Integer getIdConta() {
+		return idConta;
+	}
+	public void setIdConta(Integer idConta) {
+		this.idConta = idConta;
+	}
+	
+	
 	
 }

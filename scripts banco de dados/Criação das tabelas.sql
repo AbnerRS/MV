@@ -45,7 +45,8 @@ CREATE TABLE conta
       VALOR_MOVIMENTACOES FLOAT,
       SALDO_INICIAL FLOAT,
       SALDO_ATUAL FLOAT,
-      DATA_CRIACAO DATE);
+      DATA_CRIACAO DATE,
+      ATIVA(5));
      
 --criação da chave estrangeira  da conta 
 ALTER TABLE conta 
